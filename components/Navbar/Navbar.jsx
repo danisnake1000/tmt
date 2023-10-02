@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <div className="email" style={{display:"flex"}}>
         <span class="material-symbols-outlined">mail</span>
-        <p className='ml-2' >alejandro@tmtoperadora.com.ar</p>
+        <p className='ml-2' >reservas@tmtoperadora.tur.ar</p>
       </div>
 
 
@@ -37,10 +37,10 @@ const Navbar = () => {
 <Link href={"/"}>  
 <img src="/Logo/logotipo.gif" alt="" />
 </Link>
-  {/* <div className="text">
+   <div className="text">
     <h4 style={{color:"black"}}>Operadora Mayorista de Turismo</h4>
     <h6 style={{color:"black",fontSize:"12px"}}>EVyT Leg. 14556 / Dip. 630</h6>
-  </div> */}
+  </div> 
 </div>
 
 

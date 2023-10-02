@@ -58,7 +58,7 @@ const FooterUI = () => {
         <div className='flex flex-col text-center align-middle items-center '>
 
             <h1 className='mt-7 mb-4 text-xl'>Acerca de nosotros</h1>
-            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500"> TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630 / EX-2021-86449268- -APN-DRAV#SGP</p>
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500"> TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630 </p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">RAZON SOCIAL: GIUNTA ALEJANDRO GONZALO</p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Cuit: 20-30057153-1</p>
 
@@ -70,8 +70,12 @@ const FooterUI = () => {
         <div className='flex flex-col text-center align-middle items-center'>
 
             <h1 className='mt-7 mb-4 text-xl'>Contacto</h1>
-            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TRAVELFAP S.A.S.EVT Leg. 17971 / EX-2021-86449268</p>
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630</p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Cuit: 20-30057153-1 - Teléfono:  261 - 2779213 // 261 - 7777237- Horario de Atención: 9 a 18</p>
+           
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">DIRECCION: 9 DE JULIO 951 - PISO 4 - DPTO 17
+</p>
+           
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500"></p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Local Virtual - Agencia SociaLocal Virtual</p>
             <Button className=' bg-red-800 mt-3'><a className=" text-red " href="/nic.pdf" target="_blank">Ver Disposición Habilitante</a></Button>
@@ -82,8 +86,9 @@ const FooterUI = () => {
     </div>
 
     <div className="flex mt-12 text-center flex-col items-center">
-        <p>Dirección General de Defensa y Protección al Consumidor - Consultas y/o denuncias El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326". "La DIRECCION NACIONAL DE PROTECCION DE DATOS PERSONALES, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.</p>
-        <p className='mt-5'>Ley 24.240 Autoridad Nacional de aplicación Defensa de las y los Consumidores. Para reclamos ingrese aquí:</p>
+        <p>Dirección General de Defensa y Protección al Consumidor - <a href ="https://autogestion.produccion.gob.ar/consumidores" target="_blank" className='hover:text-red-950 cursor-pointer'>Consultas y/o denuncias</a></p>
+        <p>El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326". "La DIRECCION NACIONAL DE PROTECCION DE DATOS PERSONALES, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.</p>
+        <p className='mt-5'>Ley 24.240 Autoridad Nacional de aplicación Defensa de las y los Consumidores. Para reclamos ingrese aquí </p>
         <a className=" text-red mt-2 " href="/nic.pdf" target="_blank"></a>
         <Button className=' bg-red-800 mt-3'><a className=" text-red " href="https://www.argentina.gob.ar/servicio/presentar-una-denuncia-contra-una-agencia-de-viajes" target="_blank">DENUNCIA CONTRA UNA AGENCIA</a></Button>
 
@@ -197,28 +202,7 @@ const FooterUI = () => {
         </a>
       </li>
 
-      <li>
-        <a
-          href="/"
-          rel="noreferrer"
-          target="_blank"
-          className="text-white-700 transition hover:text-red-700/75"
-        >
-          <span className="sr-only">GitHub</span>
-          <svg
-            className="h-6 w-6"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-      </li>
+      
 
       
     </ul>
