@@ -58,9 +58,9 @@ const FooterUI = () => {
         <div className='flex flex-col text-center align-middle items-center '>
 
             <h1 className='mt-7 mb-4 text-xl'>Acerca de nosotros</h1>
-            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TRIEX VIAJES Y TURISMO - EVT Leg. 17971 / EX-2021-86449268- -APN-DRAV#SGP</p>
-            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">RAZON SOCIAL: TRAVELFAP S.A.S.</p>
-            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Cuit: 30-71673940-2</p>
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500"> TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630 / EX-2021-86449268- -APN-DRAV#SGP</p>
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">RAZON SOCIAL: GIUNTA ALEJANDRO GONZALO</p>
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Cuit: 20-30057153-1</p>
 
             
             <Button className=' bg-red-800 mt-3'><a className=" text-red " href="/nic.pdf" target="_blank">Ver Disposición Habilitante</a></Button>
@@ -71,7 +71,7 @@ const FooterUI = () => {
 
             <h1 className='mt-7 mb-4 text-xl'>Contacto</h1>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TRAVELFAP S.A.S.EVT Leg. 17971 / EX-2021-86449268</p>
-            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Cuit: 20-30057153-1 - Teléfono: +54 9 261 6347453 - Horario de Atención: 9 a 18</p>
+            <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Cuit: 20-30057153-1 - Teléfono:  261 - 2779213 // 261 - 7777237- Horario de Atención: 9 a 18</p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500"></p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">Local Virtual - Agencia SociaLocal Virtual</p>
             <Button className=' bg-red-800 mt-3'><a className=" text-red " href="/nic.pdf" target="_blank">Ver Disposición Habilitante</a></Button>
@@ -85,7 +85,7 @@ const FooterUI = () => {
         <p>Dirección General de Defensa y Protección al Consumidor - Consultas y/o denuncias El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326". "La DIRECCION NACIONAL DE PROTECCION DE DATOS PERSONALES, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.</p>
         <p className='mt-5'>Ley 24.240 Autoridad Nacional de aplicación Defensa de las y los Consumidores. Para reclamos ingrese aquí:</p>
         <a className=" text-red mt-2 " href="/nic.pdf" target="_blank"></a>
-        <Button className=' bg-red-800 mt-3'><a className=" text-red " href="/nic.pdf" target="_blank">DENUNCIA CONTRA UNA AGENCIA</a></Button>
+        <Button className=' bg-red-800 mt-3'><a className=" text-red " href="https://www.argentina.gob.ar/servicio/presentar-una-denuncia-contra-una-agencia-de-viajes" target="_blank">DENUNCIA CONTRA UNA AGENCIA</a></Button>
 
     </div>
 

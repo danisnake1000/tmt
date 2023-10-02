@@ -16,7 +16,7 @@ const Navbar = () => {
 
           <div className="telefono" style={{display:"flex"}}>
         <span class="material-symbols-outlined">call</span>
-        <p className='ml-2'>+54 9 261 6347453</p>
+        <p className='ml-2'>+54 9 261 - 2779213 </p>
       </div>  
 
         <h1 style={{margin:"0px 20px 0px 20px"}}>-</h1>
