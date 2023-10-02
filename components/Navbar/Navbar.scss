@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(217,184,184);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(228, 228, 228) 100%);
+    position: sticky;
+    top: 0; 
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    font-family: 'Onest', sans-serif;
+
+    .navbarTop{
+        display: flex;
+        background-color: rgb(122, 38, 38);
+        color: rgb(209, 209, 209);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: end;
+        align-items: end;
+        padding: 4px 105px 4px 4px;
+        height: 28px;
+        
+
+        .telefono{
+
+            transition: color 0.3s; /* Agrega una transición suave */
+            font-size: 14px;
+
+            span{
+                font-size: 20px;
+            }
+
+        }
+
+        .telefono:hover{
+
+            cursor: pointer;
+            color: rgb(255, 255, 255); /* Cambia el color del texto a negro cuando el mouse está sobre el elemento */
+            transition: color 0.3s; /* Agrega una transición suave */
+            border-radius: 200px;
+            font-size: 14px;
+
+
+        }
+
+        .email{
+            transition: color 0.3s; /* Agrega una transición suave */
+            font-size: 14px;
+            span{
+                font-size: 20px;
+            }
+
+        }
+
+        .email:hover{
+
+            cursor: pointer;
+            color: rgb(255, 255, 255); /* Cambia el color del texto a negro cuando el mouse está sobre el elemento */
+            transition: color 0.3s; /* Agrega una transición suave */
+            border-radius: 200px;
+            font-size: 14px;
+
+
+        }
+
+
+    }
+
+
+    .navbarDown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+
+
+
+        .left{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            text-align: center;
+            
+            img{
+                margin-left: 60px;
+                width: 10%;
+            }
+        }
+    
+        .rigth{
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+    
+            .up{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: rgb(63, 63, 63);
+                text-align: center;
+    
+                
+            }
+    
+    
+    
+            .down{
+    
+                display: flex;
+    
+                .botonNavbar{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    color: rgb(63, 63, 63);
+                    padding: 10px 15px 10px 15px;
+                    transition: color 0.3s, background-color 1.3s; /* Agrega una transición suave */
+                    border-radius: 200px;
+                    margin: 5px;
+    
+                    p{
+                      font-size: 13px;
+                        margin: 0;
+                    }
+            
+                   }
+            
+                   .botonNavbar:hover {
+                    color: rgba(209, 3, 3, 0.747); /* Cambia el color del texto a negro cuando el mouse está sobre el elemento */
+                    transition: color 0.3s, background-color 0.3s; /* Agrega una transición suave */
+                    padding: 10px 15px 10px 15px;
+                    margin: 5px;
+                    border-radius: 200px;
+    
+                  }
+            
+                    p{
+                        margin-right: 30px;
+                    }
+    
+            }
+    
+          
+    
+     
+        }
+
+
+
+
+
+        
+    }
+
+
+   
+}
+
+
+
+
+
+
+
+
+
+  
+  /* Estilos para pantallas pequeñas (móviles) */
+  @media (max-width: 976px) {
+    .navbar {
+      .navbarTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      .navbarDown {
+        height: 15vh;
+        flex-direction: column; /* Cambia la dirección de la columna en pantallas pequeñas */
+        justify-content: center;
+        align-items: center;
+  
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+          img {
+            display: none;
+            padding: 0;
+            margin: 0;
+            width: 20%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+          }
+        }
+  
+        .rigth {
+          .down {
+            .botonNavbar {
+              padding: 5px 10px; /* Ajusta el padding en pantallas pequeñas */
+              font-size: 10px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+            }
+  
+            .botonNavbar:hover {
+              padding: 5px 10px; /* Ajusta el padding en pantallas pequeñas */
+            }
+  
+            p {
+              margin-right: 10px; /* Ajusta el margen en pantallas pequeñas */
+            }
+          }
+        }
+      }
+    }
+  }

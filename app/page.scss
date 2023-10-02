@@ -1,0 +1,24 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(49,60,47);
+    background: linear-gradient(90deg, rgb(184, 184, 184) 0%, rgb(226, 226, 226) 41%, rgb(172, 170, 170) 100%);
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Onest', sans-serif;
+
+    .py-4{
+        background-color: white;
+        color: black;
+    }
+
+    .lugares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
