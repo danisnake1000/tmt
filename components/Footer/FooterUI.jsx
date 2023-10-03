@@ -67,12 +67,12 @@ const FooterUI = () => {
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               Cuit: 20-30057153-1
             </p>
-{/* 
+
             <Button className=" bg-red-800 mt-3">
               <a className=" text-red " href="/nic.pdf" target="_blank">
                 Ver Disposición Habilitante
               </a>
-            </Button> */}
+            </Button> 
           </div>
 
           <div className="flex flex-col text-center align-middle items-center">
