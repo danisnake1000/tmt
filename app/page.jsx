@@ -24,7 +24,7 @@ export default function Home() {
 
 	useEffect(() => {
 		// Realizar la solicitud a la API y almacenar los datos en el estado
-		fetch('https://tmt-web-page-a50rbboul-astu2222.vercel.app/api/lugares')
+		fetch('https://tmtoperadora.tur.ar/api/lugares')
 		  .then((response) => response.json())
 		  .then((apiData) => {
 			setData(apiData); // Almacenar los datos en el estado
@@ -66,8 +66,8 @@ return (
 			<div className="w-full max-w-screen-xl mx-auto gap-2 grid grid-cols-12 grid-rows-2 px-8 mb-20">
 			<Card className="col-span-12 sm:col-span-4 h-[300px] relative hover:scale-115 z-10">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-        <p className="text-tiny text-white/60 uppercase font-bold">What to watch</p>
-        <h4 className="text-white font-medium text-large">Stream the Acme event</h4>
+        <p className="text-tiny text-white/60 uppercase font-bold">Camino a Potrerillos</p>
+        <h4 className="text-white font-medium text-large">Mendoza</h4>
       </CardHeader>
       <Image
         removeWrapper
@@ -78,8 +78,8 @@ return (
     </Card>
     <Card className="col-span-12 sm:col-span-4 h-[300px] hover:scale-115 z-10">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-        <p className="text-tiny text-white/60 uppercase font-bold">Plant a tree</p>
-        <h4 className="text-white font-medium text-large">Contribute to the planet</h4>
+        <p className="text-tiny text-white/60 uppercase font-bold">Pre cordillera</p>
+        <h4 className="text-white font-medium text-large">Camino a Chile</h4>
       </CardHeader>
       <Image
         removeWrapper
@@ -90,8 +90,8 @@ return (
     </Card>
     <Card className="col-span-12 sm:col-span-4 h-[300px]">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-        <p className="text-tiny text-white/60 uppercase font-bold">Supercharged</p>
-        <h4 className="text-white font-medium text-large">Creates beauty like a beast</h4>
+        <p className="text-tiny text-white/60 uppercase font-bold">Puente de Inca</p>
+        <h4 className="text-white font-medium text-large">Uspallata</h4>
       </CardHeader>
       <Image
         removeWrapper
@@ -102,8 +102,8 @@ return (
     </Card>
     <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
-        <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-        <h4 className="text-white font-medium text-2xl">Acme camera</h4>
+        <p className="text-tiny text-white/60 uppercase font-bold"></p>
+        <h4 className="text-white font-medium text-2xl">Portones del Parque</h4>
       </CardHeader>
       <Image
         removeWrapper
@@ -113,18 +113,18 @@ return (
       />
       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
         <div>
-          <p className="text-black text-tiny">Available soon.</p>
-          <p className="text-black text-tiny">Get notified.</p>
+          <p className="text-black text-tiny">Capital</p>
+          <p className="text-black text-tiny">Mendoza</p>
         </div>
-        <Button className="text-tiny" color="primary" radius="full" size="sm">
+        {/* <Button className="text-tiny" color="primary" radius="full" size="sm">
           Notify Me
-        </Button>
+        </Button> */}
       </CardFooter>
     </Card>
     <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
-        <p className="text-tiny text-white/60 uppercase font-bold">Your day your way</p>
-        <h4 className="text-white/90 font-medium text-xl">Your checklist for better sleep</h4>
+        <p className="text-tiny text-white/60 uppercase font-bold">Valle Grande</p>
+        <h4 className="text-white/90 font-medium text-xl">San Rafael</h4>
       </CardHeader>
       <Image
         removeWrapper
@@ -140,11 +140,11 @@ return (
             src="/images/breathing-app-icon.jpeg"
           />
           <div className="flex flex-col">
-            <p className="text-tiny text-white/60">Breathing App</p>
-            <p className="text-tiny text-white/60">Get a good night's sleep.</p>
+            <p className="text-tiny text-white/60">Mendoza</p>
+            <p className="text-tiny text-white/60">Argentina</p>
           </div>
         </div>
-        <Button radius="full" size="sm">Get App</Button>
+        {/* <Button radius="full" size="sm">Get App</Button> */}
       </CardFooter>
     </Card>
   </div>
