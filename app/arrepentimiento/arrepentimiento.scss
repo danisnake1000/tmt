@@ -1,0 +1,19 @@
+.arrepentimiento{
+    min-height: 84vh;
+    background: rgb(49,60,47);
+    background: linear-gradient(90deg, rgb(184, 184, 184) 0%, rgb(226, 226, 226) 41%, rgb(172, 170, 170) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .contenido{
+        font-weight: bold;
+        color: rgb(170, 36, 3);
+
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 70%;
+    }
+}
