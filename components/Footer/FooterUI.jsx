@@ -1,5 +1,8 @@
+
+
 import React from "react";
 import { Button, ButtonGroup } from "@nextui-org/button";
+import './FooterUI.scss'
 
 const FooterUI = () => {
   return (
@@ -55,7 +58,9 @@ const FooterUI = () => {
         </div>
 
         <div className="flex flex-col md:flex-row align-middle items-center justify-between">
-          <div className="flex flex-col text-center align-middle items-center ">
+
+
+          <div className="flex flex-col text-center align-middle items-center w-1/2">
             <h1 className="mt-7 mb-4 text-xl">Acerca de nosotros</h1>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               {" "}
@@ -68,14 +73,14 @@ const FooterUI = () => {
               Cuit: 20-30057153-1
             </p>
 
-            <Button className=" bg-red-800 mt-3">
+            <button className="botonLink" style={{padding:"2px 20px 2px 20px", borderRadius:"20px", marginTop:"20px"}}>
               <a className=" text-red " href="/nic.pdf" target="_blank">
                 Ver Disposición Habilitante
               </a>
-            </Button> 
+            </button> 
           </div>
 
-          <div className="flex flex-col text-center align-middle items-center">
+          <div className="flex flex-col text-center align-middle items-center w-1/2">
             <h1 className="mt-7 mb-4 text-xl">Contacto</h1>
             {/* <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630</p> */}
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
@@ -95,21 +100,27 @@ const FooterUI = () => {
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               DIRECCION: 9 DE JULIO 951 - PISO 4 - DPTO 17
             </p>
+
+          <br></br>
+          <br />
           </div>
         </div>
 
         <div className="flex mt-12 text-center flex-col items-center">
           <p>
-            Dirección General de Defensa y Protección al Consumidor -{" "}
-            <button className="bg-black mt-3"> <a
+            Dirección General de Defensa y Protección al Consumidor{" "}
+
+           
+          </p>
+
+          <button className="botonLink" style={{padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}> <a
               href="https://autogestion.produccion.gob.ar/consumidores"
               target="_blank"
              
             >
               Consultas y/o denuncias
             </a></button>
-           
-          </p>
+
           <p>
             El titular de los datos personales tiene la facultad de ejercer el
             derecho de acceso a los mismos en forma gratuita a intervalos no
@@ -126,7 +137,7 @@ const FooterUI = () => {
             Consumidores. Para reclamos ingrese aquí{" "}
           </p>
           {/* <a className=" text-red mt-2 " href="/nic.pdf" target="_blank"></a> */}
-          <Button className=" bg-red-800 mt-3">
+          <Button className=" botonLink" style={{marginTop:"20px"}}>
             <a
               className=" text-red "
               href="https://www.argentina.gob.ar/servicio/presentar-una-denuncia-contra-una-agencia-de-viajes"
@@ -135,6 +146,8 @@ const FooterUI = () => {
               DENUNCIA CONTRA UNA AGENCIA
             </a>
           </Button>
+
+          
         </div>
 
         {/* <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
@@ -264,4 +277,4 @@ const FooterUI = () => {
   );
 };
 
-export default FooterUI;
+export default FooterUI;

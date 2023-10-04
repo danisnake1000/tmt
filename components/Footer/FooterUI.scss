@@ -1,0 +1,16 @@
+
+.botonLink {
+    color: white;
+    background-color: rgba(167, 31, 31, 0);
+    border-color: white;
+    border-width: 2px;
+    transition: transform 0.3s; /* Agregamos una transición suave para el zoom */
+    font-weight: bold;
+  }
+  
+  .botonLink:hover {
+    color: rgb(133, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1); /* Escalamos el elemento al hacer hover */
+    font-weight: bold
+  }
