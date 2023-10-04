@@ -11,8 +11,8 @@ export async function POST(request) {
             port: 465,
             service: 'gmail',
             auth: {
-                user: 'tigerteamdn@gmail.com',
-                pass: 'yazg lepj esez unbh'
+                user: process.env.GMAIL_USER,
+                pass: process.env.GMAIL_PASS
             }
         });
 
