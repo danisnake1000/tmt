@@ -40,7 +40,7 @@ const Page = () => {
   return (
     <div className='arrepentimiento'>
 
-        <div className="contenido">
+        {/* <div className="contenido">
 
           <h1>Formulario de arrepentimiento</h1>
 
@@ -65,7 +65,7 @@ const Page = () => {
           <div className="Boton"></div>
 
         </div>
-     
+      */}
         {/* <form onSubmit={sendMail} className="formulario">
 
           <div className="">
