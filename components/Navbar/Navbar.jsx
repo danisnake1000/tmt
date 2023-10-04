@@ -14,16 +14,16 @@ const Navbar = () => {
 
     <div className="navbarTop">
 
-          <div className="telefono" style={{display:"flex"}}>
+      <div className="telefono" style={{display:"flex"}}>
         <span class="material-symbols-outlined">call</span>
-        <p className='ml-2'>+54 9 261 - 2779213 </p>
+        <p className='ml-1'>+54 9 261-2779213 </p>
       </div>  
 
-        <h1 style={{margin:"0px 20px 0px 20px"}}>-</h1>
+        <h1 style={{margin:"0px 10px 0px 10px"}}>-</h1>
 
       <div className="email" style={{display:"flex"}}>
         <span class="material-symbols-outlined">mail</span>
-        <p className='ml-2' >reservas@tmtoperadora.tur.ar</p>
+        <p className='ml-1' >reservas@tmtoperadora.tur.ar</p>
       </div>
 
 

@@ -2,8 +2,31 @@
     width: 100%;
     height: 75vh;
   }
+
+  #imagenCarrusel{
+    height: 75vh;
+ }
   
   .react-responsive-carousel .thumbs-wrapper,
   .react-responsive-carousel .carousel-status {
     display: none !important;
+  }
+
+
+  @media (max-width: 976px) {
+
+    .custom-carousel {
+        width: 100%;
+        height: 55vh;
+      }
+
+     #imagenCarrusel{
+        height: 55vh;
+     }
+      
+      .react-responsive-carousel .thumbs-wrapper,
+      .react-responsive-carousel .carousel-status {
+        display: none !important;
+      }
+
   }

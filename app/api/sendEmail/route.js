@@ -21,7 +21,7 @@ export async function POST(request) {
             to: 'nahuelastudillo@gmail.com',
             subject: "F.A." + nombre + ", " + email,
             html: `
-                <h3>Hola Tmt</h3>
+                <h3>Informacion Arrepentimiento Tmt :</h3>
                 <li> Nombre: ${nombre}</li>
                 <li> Apellido: ${apellido}</li>
                 <li> NRO Compra: ${nroCompra}</li>

@@ -61,7 +61,7 @@ const FooterUI = () => {
         <div className="flex flex-col md:flex-row align-middle items-center justify-between">
 
 
-          <div className="flex flex-col text-center align-middle items-center w-1/2">
+          <div className="flex flex-col text-center align-middle items-center w-2/2">
             <h1 className="mt-7 mb-4 text-xl">Acerca de nosotros</h1>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               {" "}
@@ -81,7 +81,7 @@ const FooterUI = () => {
             </button> 
           </div>
 
-          <div className="flex flex-col text-center align-middle items-center w-1/2 mb-2" >
+          <div className="flex flex-col text-center align-middle items-center w-2/2 mb-2" >
             <h1 id="contacto" className=" mb-4 text-xl">Contacto</h1>
             {/* <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630</p> */}
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">

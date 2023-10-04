@@ -19,7 +19,7 @@ const Page = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3000/api/sendEmail', {
+      const response = await fetch('https://www.tmtoperadora.tur.ar/api/sendEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
