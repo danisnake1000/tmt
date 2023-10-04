@@ -3,6 +3,7 @@
 import React from "react";
 import { Button, ButtonGroup } from "@nextui-org/button";
 import './FooterUI.scss'
+import Link from "next/link";
 
 const FooterUI = () => {
   return (
@@ -64,7 +65,7 @@ const FooterUI = () => {
             <h1 className="mt-7 mb-4 text-xl">Acerca de nosotros</h1>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               {" "}
-              TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630{" "}
+              TMT OPERADORA MAYORISTA DE TURISMO - EVT LEGAJO: 14556 / DISP. 630{" "}
             </p>
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               RAZON SOCIAL: GIUNTA ALEJANDRO GONZALO
@@ -80,8 +81,8 @@ const FooterUI = () => {
             </button> 
           </div>
 
-          <div className="flex flex-col text-center align-middle items-center w-1/2">
-            <h1 className="mt-7 mb-4 text-xl">Contacto</h1>
+          <div className="flex flex-col text-center align-middle items-center w-1/2 mb-2" >
+            <h1 className=" mb-4 text-xl">Contacto</h1>
             {/* <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630</p> */}
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               {" "}
@@ -101,8 +102,8 @@ const FooterUI = () => {
               DIRECCION: 9 DE JULIO 951 - PISO 4 - DPTO 17
             </p>
 
-          <br></br>
-          <br />
+            
+
           </div>
         </div>
 
@@ -137,7 +138,12 @@ const FooterUI = () => {
             Consumidores. Para reclamos ingrese aquí{" "}
           </p>
           {/* <a className=" text-red mt-2 " href="/nic.pdf" target="_blank"></a> */}
-          <Button className=" botonLink" style={{marginTop:"20px"}}>
+
+
+          
+
+
+          <button className=" botonLink" style={{marginTop:"20px",padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}>
             <a
               className=" text-red "
               href="https://www.argentina.gob.ar/servicio/presentar-una-denuncia-contra-una-agencia-de-viajes"
@@ -145,66 +151,14 @@ const FooterUI = () => {
             >
               DENUNCIA CONTRA UNA AGENCIA
             </a>
-          </Button>
+          </button>
+
+          
+
+
 
           
         </div>
-
-        {/* <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-          <li>
-            <a
-              className="text-white-700 transition hover:text-red-700/75"
-              href="/"
-            >
-              About
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-white-700 transition hover:text-red-700/75"
-              href="/"
-            >
-              Careers
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-white-700 transition hover:text-red-700/75"
-              href="/"
-            >
-              History
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-white-700 transition hover:text-red-700/75"
-              href="/"
-            >
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-white-700 transition hover:text-red-700/75"
-              href="/"
-            >
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-white-700 transition hover:text-red-700/75"
-              href="/"
-            >
-              Blog
-            </a>
-          </li>
-        </ul> */}
 
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
@@ -272,6 +226,37 @@ const FooterUI = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="foooterBottom" style={{padding:"30px", display:"flex", justifyContent:"space-between"}}>
+
+        <div className="izquierda">
+
+        <p style={{fontWeight:"bold"}}>Ley 24.240</p>
+        <p>Autoridad Nacional de aplicación.</p>
+        <p style={{marginBottom:"20px"}}>Ley 24.240
+Autoridad Nacional de aplicación.
+Defensa de las y los Consumidores. Para reclamos ingrese <a style={{color:"#707070"}} href="https://autogestion.produccion.gob.ar/consumidores" target='_blank' >aquí</a> </p>
+
+        </div>
+
+        <div className="derecha" style={{display:"flex", flexDirection:"column", justifyContent:"end", alignItems:"end"}}>
+
+        <h3>TMT OPERADORA MAYORISTA DE TURISMO 2023</h3>
+
+  <Link href="/arrepentimiento">
+
+  <button className=" botonLink" style={{marginTop:"20px",padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}>
+      Botón arrepentimiento
+  </button>
+
+  </Link>
+
+
+        </div>
+       
+
+       
       </div>
     </footer>
   );

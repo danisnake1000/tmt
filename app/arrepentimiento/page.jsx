@@ -1,15 +1,16 @@
 'use client'
-
 import React, { useState } from 'react';
 import './arrepentimiento.scss';
-
-
-
+import {Input} from "@nextui-org/react";
 
 const Page = () => {
+  const [nombre, setNombre] = useState('');
+  const [apellido, setApellido] = useState('');
+  const [nroCompra, setNroCompra] = useState('');
   const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [telefono, setTelefono] = useState('');
+  const [fechaCompra, setFechaCompra] = useState('');
+  const [mensaje, setMensaje] = useState('');
 
   const sendMail = async (e) => {
     e.preventDefault();
@@ -21,16 +22,20 @@ const Page = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          nombre,
+          apellido,
+          nroCompra,
           email,
-          subject,
-          message,
+          telefono,
+          fechaCompra,
+          mensaje,
         }),
       });
 
       if (response.ok) {
-        console.log('Email Sent Successfully');
+        console.log('Email enviado con éxito');
       } else {
-        console.error('Failed to Send Email');
+        console.error('Error al enviar el correo');
       }
     } catch (error) {
       console.error('Error:', error);
@@ -40,103 +45,137 @@ const Page = () => {
   return (
     <div className='arrepentimiento'>
 
-        {/* <div className="contenido">
+<h2 style={{color:"black", fontWeight:"bold", fontSize:"26px", marginBottom:"10px"}}>Formulario de Arrepentimiento</h2>
+      <p style={{marginBottom:"20px"}}>Ley 24.240
+Autoridad Nacional de aplicación.
+Defensa de las y los Consumidores. Para reclamos ingrese <a style={{color:"blue"}} href="https://autogestion.produccion.gob.ar/consumidores" target='_blank' >aquí</a> </p>
+      
+      <form onSubmit={sendMail}>
 
-          <h1>Formulario de arrepentimiento</h1>
 
-          <div className="filaUno" style={{display:"flex", margin:"20px"}}>
+      <div className="filaUno">
 
-            <div className="nroCompra" style={{width:"50%"}}>
-              <p>INGRESE EL NUMERO DE COMPRA</p>
-              <input type="text" placeholder='' style={{width:"80%"}} />
-            </div>
+        <div className="nroCompra" >
 
-            <div className="fechaCompra" style={{width:"50%"}}>
-              <p>FECHA EN QUE SE REALIZO LA COMPRA</p>
-              <input type='date' style={{width:"40%"}} ></input>
-            </div>
-            
-          </div>
+        <label htmlFor="nroCompra">Número de Compra:</label>
+        <input
+          type="text"
+          id="nroCompra"
+          value={nroCompra}
+          placeholder='Ingrese su número de compra'
+          onChange={(e) => setNroCompra(e.target.value)}
+          required
+        />
+        </div>
 
-          <div className="filaDos"></div>
-
-          <div className="filaTres"></div>
-          
-          <div className="Boton"></div>
+        <div className="fechaCompra">
+        <label htmlFor="fechaCompra">Fecha de Compra:</label>
+        <input
+          type="date"
+          id="fechaCompra"
+          value={fechaCompra}
+          placeholder='Fecha de compra'
+          onChange={(e) => setFechaCompra(e.target.value)}
+          required
+        />
 
         </div>
-      */}
-        {/* <form onSubmit={sendMail} className="formulario">
 
-          <div className="">
-            <h1 className="text-xl font-semibold">Tutorial Email</h1>
-          </div>
+      </div>
+
+      <div className="filaDos">
 
 
-          <div className="">
+        <label htmlFor="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            value={mensaje}
+            placeholder= "Por favor, comparta su mensaje con nosotros, y le responderemos a la brevedad."
+            onChange={(e) => setMensaje(e.target.value)}
+            required
+          />
 
-            
-            <label htmlFor="email" className="text-sm font-light text-gray-500">
-              Your Email
-            </label>
+      </div>
+
+      <div className="filaTres">
+
+      <h2>Completa los datos del cliente</h2>
+
+        <div className="datos">
+
+
+            <div className="nombre">
+
+              <label htmlFor="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder='Ingrese su nombre'
+                  value={nombre}
+                  onChange={(e) => setNombre(e.target.value)}
+                  required
+                />
+
+              </div>
+
+              <div className="apellido">
+
+              <label htmlFor="apellido">Apellido:</label>
+              <input
+                type="text"
+                id="apellido"
+                placeholder='Ingrese su apellido'
+                value={apellido}
+                onChange={(e) => setApellido(e.target.value)}
+                required
+              />
+
+              </div>
+
+
+              <div className="email">
+
+                <label htmlFor="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder='Ingrese su email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+
+              </div>
 
 
 
-            <input
-              name="email"
-              type="email"
-              id="email"
-              required
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              placeholder="Your Email"
-              className="rounded-xl border-2 border-gray-400 p-2"
-            />
-          </div>
-          <div className="relative flex flex-col space-y-1">
-            <label htmlFor="title" className="text-sm font-light text-gray-500">
-              Subject
-            </label>
-            <input
-              name="title"
-              type="text"
-              id="title"
-              required
-              value={subject}
-              onChange={(e) => {
-                setSubject(e.target.value);
-              }}
-              placeholder="What will you title this goal?"
-              className="rounded-xl border-2 border-gray-400 p-2"
-            />
-          </div>
-          <div className="relative flex flex-col space-y-1">
-            <label htmlFor="description" className="text-sm font-light text-gray-500">
-              What would you need help with?
-            </label>
-            <textarea
-              name="description"
-              id="description"
-              required
-              cols={10}
-              rows={5}
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-              placeholder="What will you title this goal?"
-              className="rounded-xl border-2 border-gray-400 p-2"
-            />
-          </div>
+              <div className="telefono">
 
-          <button type='submit'>
+                <label htmlFor="telefono">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  placeholder='Ingrese su teléfono'
+                  value={telefono}
+                  onChange={(e) => setTelefono(e.target.value)}
+                  required
+                />
 
-            <span>Send Message</span>
-          </button>
-        </form> */}
+              </div>
 
+        </div>
+
+      
+
+      </div>
+
+       
+
+        
+       
+      <button type='submit' className=" botonLink" style={{ margin:"50px", marginBottom:"-0px",padding:"20px 20px 20px 20px",borderRadius:"20px"}}> Enviar formulario de arrepentimiento</button>
+        
+      </form>
     </div>
   );
 };
