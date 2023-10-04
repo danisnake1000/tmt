@@ -74,11 +74,12 @@ const FooterUI = () => {
               Cuit: 20-30057153-1
             </p>
 
+            <a className=" text-red " href="/nic.pdf" target="_blank">
             <button className="botonLink" style={{padding:"2px 20px 2px 20px", borderRadius:"20px", marginTop:"20px"}}>
-              <a className=" text-red " href="/nic.pdf" target="_blank">
                 Ver Disposición Habilitante
-              </a>
             </button> 
+            </a>
+
           </div>
 
           <div className="flex flex-col text-center align-middle items-center w-2/2 mb-2" >
@@ -117,13 +118,15 @@ const FooterUI = () => {
            
           </p>
 
-          <button className="botonLink" style={{padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}> <a
+          <a
               href="https://autogestion.produccion.gob.ar/consumidores"
               target="_blank"
              
             >
+          <button className="botonLink" style={{padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}> 
               Consultas y/o denuncias
-            </a></button>
+            </button>
+            </a>
 
           </div>
 
@@ -148,16 +151,17 @@ const FooterUI = () => {
 
           
 
-
-          <button className=" botonLink" style={{marginTop:"20px",padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}>
-            <a
+          <a
               className=" text-red "
               href="https://www.argentina.gob.ar/servicio/presentar-una-denuncia-contra-una-agencia-de-viajes"
               target="_blank"
             >
+          <button className=" botonLink" style={{marginTop:"20px",padding:"2px 20px 2px 20px", margin:"14px",borderRadius:"20px"}}>
+
               DENUNCIA CONTRA UNA AGENCIA
-            </a>
+           
           </button>
+          </a>
 
           
 
