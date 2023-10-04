@@ -11,9 +11,12 @@ const Page = () => {
   const [telefono, setTelefono] = useState('');
   const [fechaCompra, setFechaCompra] = useState('');
   const [mensaje, setMensaje] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const sendMail = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     try {
       const response = await fetch('http://localhost:3000/api/sendEmail', {
@@ -33,12 +36,17 @@ const Page = () => {
       });
 
       if (response.ok) {
+        setIsSuccess(true);
         console.log('Email enviado con éxito');
       } else {
+        setIsSuccess(false);
         console.error('Error al enviar el correo');
       }
     } catch (error) {
+      setIsSuccess(false);
       console.error('Error:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -50,6 +58,14 @@ const Page = () => {
 Autoridad Nacional de aplicación.
 Defensa de las y los Consumidores. Para reclamos ingrese <a style={{color:"blue"}} href="https://autogestion.produccion.gob.ar/consumidores" target='_blank' >aquí</a> </p>
       
+
+
+{isLoading && <div>Cargando...</div>}
+      {isSuccess && <div>Email enviado con éxito</div>}
+      {!isLoading && !isSuccess && (
+
+
+
       <form onSubmit={sendMail}>
 
 
@@ -176,6 +192,8 @@ Defensa de las y los Consumidores. Para reclamos ingrese <a style={{color:"blue"
       <button type='submit' className=" botonLink" style={{ margin:"50px", marginBottom:"-0px",padding:"20px 20px 20px 20px",borderRadius:"20px"}}> Enviar formulario de arrepentimiento</button>
         
       </form>
+
+)}
     </div>
   );
 };

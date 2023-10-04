@@ -8,7 +8,6 @@ import { Carousel } from 'flowbite';
 
 const Carrusel = () => {
 
-  const carouselRef = useRef(null);
 
     useEffect(()=>{
 

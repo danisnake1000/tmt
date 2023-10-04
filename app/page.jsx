@@ -12,7 +12,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { useEffect, useState } from "react";
 import { Spinner } from "@nextui-org/react";
 import Carrusel from "@/components/Carousel/Carrusel";
-
+import CarruselResponsive from '../components/Carousel/CarruselResponsive'
 export default function Home() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -33,7 +33,8 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Carrusel />
+      {/* <Carrusel /> */}
+      <CarruselResponsive/>
 
       {loading ? (
         <>
@@ -41,7 +42,7 @@ export default function Home() {
         </>
       ) : (
         <>
-          <h1 className="fs-40 text-black text-2xl m-10	">
+          <h1 className="fs-40 text-black text-2xl m-5	">
             Embárcate a la aventura y explora estos lugares únicos:
           </h1>
           <div className="lugares">
