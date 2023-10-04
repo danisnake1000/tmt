@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+'use client'
+import React, { useEffect, useRef } from 'react'
 import { Carousel } from 'flowbite';
 
 
@@ -7,6 +8,7 @@ import { Carousel } from 'flowbite';
 
 const Carrusel = () => {
 
+  const carouselRef = useRef(null);
 
     useEffect(()=>{
 
@@ -82,23 +84,23 @@ const Carrusel = () => {
     <div className="relative h-56 overflow-hidden rounded-lg md:h-96 min-h-[75vh]">
 
         <div className="hidden duration-700 ease-in-out" data-carousel-item>  
-            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://www.xtrafondos.com/descargar.php?id=4273&resolucion=3840x2160" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="/Carrusel/1.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
 
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://images2.alphacoders.com/117/1174145.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="/Carrusel/2.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
 
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/1e/f9/da/1ef9dac7a8f538f66fc10ffbb677037e.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="/Carrusel/3.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
 
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://trotadores.com/wp-content/uploads/2018/02/TP031_Mendoza.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="/Carrusel/4.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
 
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/4a/ac/30/4aac30545aed8f13dddeb9e3884bf394.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="..."/>
+            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="/Carrusel/5.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="..."/>
         </div>
         
     </div>

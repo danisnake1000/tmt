@@ -19,3 +19,31 @@
   width: 100%;
   background-color: rgb(79, 2, 2);
 }
+
+
+@media (max-width: 976px) {
+
+  #contacto{
+    margin-top: 45px;
+  }
+  .foooterBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(79, 2, 2);
+
+    .derecha{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      h3{
+        font-size: 15px;
+      }
+    }
+  }
+
+}

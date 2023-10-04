@@ -6,6 +6,7 @@ import clsx from "clsx";
 import  Navbar  from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import FooterUI from '../components/Footer/FooterUI'
+import  Header  from '../components/Navbar/Header'
 
 
 
@@ -26,7 +27,7 @@ export default function RootLayout({
 
 			<body>
 				<Providers>
-					<Navbar/>
+					<Header/>
 						{children}
 					<FooterUI/>
 				</Providers>

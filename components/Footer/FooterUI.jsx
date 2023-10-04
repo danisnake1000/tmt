@@ -8,8 +8,8 @@ import Link from "next/link";
 const FooterUI = () => {
   return (
     <footer className="bg-red-900">
-      <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex justify-center text-teal-600">
+      <div className="mx-auto max-w-6xl px-4 py-3 sm:px-6 lg:px-8">
+        <div className="flex justify-center text-teal-600 ">
           <img
             style={{ width: "90px" }}
             src="/Logo/LogotipoBlanco.png"
@@ -82,7 +82,7 @@ const FooterUI = () => {
           </div>
 
           <div className="flex flex-col text-center align-middle items-center w-1/2 mb-2" >
-            <h1 className=" mb-4 text-xl">Contacto</h1>
+            <h1 id="contacto" className=" mb-4 text-xl">Contacto</h1>
             {/* <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">TMT OPERADORA MAYORISTA DE TURISMO- EVT LEGAJO: 14556 / DISP. 630</p> */}
             <p className="mx-auto mt-1 max-w-md text-center leading-relaxed text-white-500">
               {" "}
@@ -108,6 +108,9 @@ const FooterUI = () => {
         </div>
 
         <div className="flex mt-12 text-center flex-col items-center">
+
+          <div className="consultasDenuncias" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+
           <p>
             Dirección General de Defensa y Protección al Consumidor{" "}
 
@@ -121,6 +124,9 @@ const FooterUI = () => {
             >
               Consultas y/o denuncias
             </a></button>
+
+          </div>
+
 
           <p>
             El titular de los datos personales tiene la facultad de ejercer el
@@ -160,7 +166,7 @@ const FooterUI = () => {
           
         </div>
 
-        <ul className="mt-12 flex justify-center gap-6 md:gap-8">
+        <ul className="mt-3 flex justify-center gap-6 md:gap-8">
           <li>
             <a
               href="/"
@@ -228,7 +234,7 @@ const FooterUI = () => {
         </ul>
       </div>
 
-      <div className="foooterBottom" style={{padding:"30px", display:"flex", justifyContent:"space-between"}}>
+      <div className="foooterBottom" style={{padding:"20px", display:"flex", justifyContent:"space-between"}}>
 
         <div className="izquierda">
 

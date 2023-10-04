@@ -30,13 +30,13 @@ const Navbar = () => {
     </div>
 
 
-    <div className="navbarDown">
+    {/* <div className="navbarDown">
 
     <div className="left">
 
-<Link href={"/"}>  
+<a href={"/"}>  
 <img src="/Logo/logotipo.gif" alt="" />
-</Link>
+</a>
    <div className="text">
     <h4 style={{color:"black"}}>Operadora Mayorista de Turismo</h4>
     <h6 style={{color:"black",fontSize:"12px"}}>EVyT Leg. 14556 / Dip. 630</h6>
@@ -98,7 +98,7 @@ const Navbar = () => {
 </div>
 
 
-    </div>
+    </div> */}
        
 
     </div>
