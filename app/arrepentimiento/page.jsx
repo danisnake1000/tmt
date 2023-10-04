@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import './arrepentimiento.scss';
-import DatePicker from 'flowbite-datepicker';
+
 
 
 
