@@ -11,6 +11,7 @@ export async function POST(request) {
             port: 465,
             service: 'gmail',
             auth: {
+                //ojala funcione...
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS
             }
